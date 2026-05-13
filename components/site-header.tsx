@@ -17,7 +17,7 @@ export function SiteHeader({
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent-foreground/70">
             40
           </span>
-          <span className="text-xl font-medium tracking-tight text-primary">Rabbānās</span>
+          <span className="text-xl font-medium tracking-tight text-primary">Rabbanās</span>
         </Link>
         <div className="flex items-center gap-3">
           {signedIn ? (
