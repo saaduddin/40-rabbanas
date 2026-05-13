@@ -15,9 +15,9 @@ export function SiteHeader({
       <div className="mx-auto flex w-full max-w-3xl items-center justify-between gap-4 px-5 py-3 sm:px-8">
         <Link href="/" className="flex items-baseline gap-2">
           <span className="font-mono text-[10px] uppercase tracking-[0.3em] text-accent-foreground/70">
-            Forty
+            40
           </span>
-          <span className="text-xl font-medium tracking-tight text-primary">Rabbānāt</span>
+          <span className="text-xl font-medium tracking-tight text-primary">Rabbānās</span>
         </Link>
         <div className="flex items-center gap-3">
           {signedIn ? (
