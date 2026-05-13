@@ -70,7 +70,7 @@ export default async function HomePage(props: {
       <main className="mx-auto w-full max-w-3xl px-5 pb-24 pt-10 sm:px-8 sm:pt-14">
         <section className="mb-12 flex flex-col items-center text-center">
           <p className="font-mono text-[11px] uppercase tracking-[0.25em] text-accent-foreground/70">
-            Arbaʿīn Rabbāna · The Forty
+            Arbaʿīn Rabbanā · The Forty
           </p>
           <h1 className="mt-3 text-balance text-5xl font-medium leading-[1.05] text-foreground sm:text-6xl">
             Forty supplications that begin with{" "}
