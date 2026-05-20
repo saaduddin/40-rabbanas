@@ -1,35 +1,51 @@
-# 40-rabbanas
+# 40 Rabbanas
 
-This is a [Next.js](https://nextjs.org) project bootstrapped with [v0](https://v0.app).
+A beautiful Next.js web application dedicated to reading, listening, and tracking the 40 Rabbana Duas from the Quran.
 
-## Built with v0
+## Features
 
-This repository is linked to a [v0](https://v0.app) project. You can continue developing by visiting the link below -- start new chats to make changes, and v0 will push commits directly to this repo. Every merge to `main` will automatically deploy.
+- **Listen and Read**: Integrated audio player (`components/audio-player.tsx`) to listen to the recitations of the Duas.
+- **Progress Tracking**: Track your daily streaks and build a habit with the streak badge system.
+- **Bookmarking**: Save your favorite Rabbanas for quick access using the bookmark pill.
+- **Authentication**: Secure authentication flow via the Quran Foundation API (`lib/qf/session.ts` & `app/api/auth/`).
+- **Responsive Design**: Beautiful and accessible UI powered by Radix UI, shadcn/ui, and Tailwind CSS v4.
 
-[Continue working on v0 →](https://v0.app/chat/projects/prj_nHoQeVd7ga1uALFzEqWpxDEaHdDb)
+## Tech Stack
+
+- **Framework**: [Next.js 16](https://nextjs.org) (App Router)
+- **Language**: TypeScript
+- **State & UI**: [React 19](https://react.dev)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **Components**: [shadcn/ui](https://ui.shadcn.com) & [Radix Primitives](https://www.radix-ui.com)
 
 ## Getting Started
 
-First, run the development server:
+First, clone the repository and install dependencies:
+
+```bash
+npm install
+# or
+pnpm install
+```
+
+### Environment Variables
+
+You will need to set up environment variables for the Quran Foundation API and authentication flow. Create a `.env.local` file in the root directory and add the necessary configuration. Refer to the `lib/qf/config.ts` for expected keys, such as client ID and secrets.
+
+### Run the Development Server
 
 ```bash
 npm run dev
 # or
-yarn dev
-# or
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Project Structure
 
-## Learn More
+- `app/` - Next.js App Router root, pages, and API routes (including OAuth 2.0 PKCE auth handlers).
+- `components/` - Reusable UI components, including the audio player, toasts, badges, and base `ui/` components.
+- `lib/` - Utility functions and Quran Foundation (`qf`) API integration.
+- `hooks/` - Custom React hooks for mobile-responsiveness and toast notifications.
 
-To learn more, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-- [v0 Documentation](https://v0.app/docs) - learn about v0 and how to use it.
-
-<a href="https://v0.app/chat/api/kiro/clone/saaduddin/40-rabbanas" alt="Open in Kiro"><img src="https://pdgvvgmkdvyeydso.public.blob.vercel-storage.com/open%20in%20kiro.svg?sanitize=true" /></a>
