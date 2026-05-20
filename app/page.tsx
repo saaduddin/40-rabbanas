@@ -74,7 +74,7 @@ export default async function HomePage(props: {
           </p>
           <h1 className="mt-3 text-balance text-5xl font-medium leading-[1.05] text-foreground sm:text-6xl">
             Forty supplications that begin with{" "}
-            <em className="font-serif text-primary">رَبَّنَا</em>
+            <span className="font-serif text-primary">رَبَّنَا</span>
           </h1>
           <p className="mt-5 max-w-xl text-pretty text-lg leading-relaxed text-muted-foreground">
             A quiet companion for reading, reciting, and returning &mdash; one duʿā a day,
