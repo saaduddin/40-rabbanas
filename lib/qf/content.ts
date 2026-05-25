@@ -100,7 +100,7 @@ export type VerseDetail = {
 export async function fetchVerseByKey(verseKey: string): Promise<VerseDetail> {
   const params = new URLSearchParams()
   params.set("language", "en")
-  params.set("translations", "131")
+  params.set("translations", "20")
   params.set("audio", "7")
   params.set("fields", "text_uthmani,juz_number,page_number")
   params.set("translation_fields", "resource_name,language_id")
