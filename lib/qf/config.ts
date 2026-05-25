@@ -29,14 +29,14 @@ const ENV_BASES: Record<QfEnv, { auth: string; api: string }> = {
 }
 
 export function getQfConfig(): QfConfig {
-  const clientId = process.env.QURAN_CLIENT_ID
-  const clientSecret = process.env.QURAN_CLIENT_SECRET
+  const clientId = process.env.QF_CLIENT_ID
+  const clientSecret = process.env.QF_CLIENT_SECRET
   if (!clientId || !clientSecret) {
     throw new Error(
       "Missing Quran Foundation API credentials. Request access: https://api-docs.quran.foundation/request-access",
     )
   }
-  const envValue = (process.env.QURAN_ENV ?? "prelive").toLowerCase()
+  const envValue = (process.env.QF_ENV ?? "prelive").toLowerCase()
   const env: QfEnv = envValue === "production" ? "production" : "prelive"
   const bases = ENV_BASES[env]
   return {
